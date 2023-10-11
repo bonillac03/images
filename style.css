@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(15, 27, 37);
+}
+
+body {
+    background-color: #CECECE;
+    background-image: url(./material/pexels-rovenimagescom-949587.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.container__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+div {
+    overflow: hidden;
+    margin: 20px;
+}
+
+img {
+    transition: opacity 0.5s; /* Cambiamos '0,5s' a '0.5s' y cambiamos 'scale(1,2)' a 'scale(1.2)' */
+    opacity: 0.8;
+}
+
+img:hover {
+    transform: scale(1.2); /* Cambiamos 'scale(1,2)' a 'scale(1.2)' */
+    opacity: 1; /* Esto aumentará la opacidad al 100% al pasar el mouse */
+}
